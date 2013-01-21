@@ -50,6 +50,12 @@ public class PlatformTest {
   }
 
   @Test
+  public void testWindows8Detection() {
+    assertTrue("Windows NT with os version 6.2 should be detected as Windows 8",
+               Platform.WIN8 == Platform.extractFromSysProperty("windows nt (unknown)", "6.2"));
+  }
+
+  @Test
   public void testShouldDistinctUnixFromLinux() {
     Platform linPlatform = Platform.extractFromSysProperty("Linux");
     assertTrue("Linux should be identified as Unix", linPlatform.is(Platform.UNIX));
