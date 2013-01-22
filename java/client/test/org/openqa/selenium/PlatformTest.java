@@ -19,6 +19,7 @@ package org.openqa.selenium;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -51,8 +52,8 @@ public class PlatformTest {
 
   @Test
   public void testWindows8Detection() {
-    assertTrue("Windows NT with os version 6.2 should be detected as Windows 8",
-               Platform.WIN8 == Platform.extractFromSysProperty("windows nt (unknown)", "6.2"));
+    assertEquals("Windows NT with os version 6.2 should be detected as Windows 8",
+               Platform.WIN8, Platform.extractFromSysProperty("windows nt (unknown)", "6.2"));
   }
 
   @Test
