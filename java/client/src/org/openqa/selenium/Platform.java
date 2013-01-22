@@ -146,8 +146,8 @@ public enum Platform {
   }
 
   /**
-   * Extracts platforms based on system properties in Java and uses a heuristic to determine the most
-   * likely operating system.  If unable to determine the operating system, it will default to
+   * Extracts platforms based on system properties in Java and uses a heuristic to determine the
+   * most likely operating system.  If unable to determine the operating system, it will default to
    * UNIX.
    *
    * @param osName the operating system name to determine the platform of
@@ -158,8 +158,8 @@ public enum Platform {
   }
 
   /**
-   * Extracts platforms based on system properties in Java and uses a heuristic to determine the most
-   * likely operating system.  If unable to determine the operating system, it will default to
+   * Extracts platforms based on system properties in Java and uses a heuristic to determine the
+   * most likely operating system.  If unable to determine the operating system, it will default to
    * UNIX.
    *
    * @param osName the operating system name to determine the platform of
