@@ -53,7 +53,7 @@ public class PlatformTest {
   @Test
   public void testWindows8Detection() {
     assertEquals("Windows NT with os version 6.2 should be detected as Windows 8",
-               Platform.WIN8, Platform.extractFromSysProperty("windows nt (unknown)", "6.2"));
+                 Platform.WIN8, Platform.extractFromSysProperty("windows nt (unknown)", "6.2"));
   }
 
   @Test
